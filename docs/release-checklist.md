@@ -22,14 +22,16 @@
 - [ ] `git push origin master`
 - [ ] `git branch -d master-test`
 - [ ] `git push origin :master-test`
-- [ ] tag blockstack/packaging `cd packaging; git checkout master; git tag v0.14.0`
-- [ ] build Linux and Windows installers: `make windows; make linux-launcher`
+- [ ] tag blockstack/packaging `cd packaging; git checkout master;`
+- [ ] build Linux launcher: `BUILD_TAG=v0.22.0; make linux-launcher`
+- [ ] build Windows installer: see https://github.com/kantai/blockstack-windows
+- [ ] sign Windows installer
 - [ ] Draft a new release on github: https://github.com/blockstack/blockstack-browser/releases/new
 - [ ] Enter the tag (eg. `v0.14.0`) the tag box and as the name of the release.
 - [ ] Enter release notes
 - [ ] Rename files to format `Blockstack-for-<platform>-v0.14.0<.extension>`
 - [ ] Upload the `.dmg` file generated earlier
-- [ ] Upload Linux launcher (packaging deploys it to azure "https://blockstack.blob.core.windows.net/packaging/blockstack-launcher-vTAG")
-- [ ] Upload Windows installer (packaging deploys it to azure "https://blockstack.blob.core.windows.net/packaging/windows-installer-vTAG.exe")
+- [ ] Upload Linux launcher (packaging writes it to `/dist/linux-launcher/launcher`)
+- [ ] Upload Windows installer
 - [ ] After verifying tests, push new version to update server.
 - [ ] Update blockstack.org with direct links to install files https://github.com/blockstack/blockstack.org/blob/master/app/js/config.js
