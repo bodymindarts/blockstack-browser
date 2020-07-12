@@ -114,7 +114,7 @@
     "sinon-as-promised": "^4.0.0",
     "source-map-support": "^0.4.0",
     "style-loader": "^0.13.1",
-    "superagent": "^1.2.0",
+    "superagent": "^3.7.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0",
